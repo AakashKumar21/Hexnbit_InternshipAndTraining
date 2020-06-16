@@ -1,4 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;test_stm32_adc/Core/Src/main.c&apos; to &apos;main.cpp&apos;" description="Rename resource &apos;main.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/main.c" name="main.cpp" stamp="1592221768649" updateReferences="true"/>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;test_stm32_adc/Core/Src/main.c&apos; to &apos;main.cpp&apos;" description="Rename resource &apos;main.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/main.c" name="main.cpp" stamp="1592221768649" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;test_stm32_adc/Core/Src/main.cpp&apos; to &apos;main.c&apos;" description="Rename resource &apos;main.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/main.cpp" name="main.c" stamp="1592225763505" updateReferences="true"/>
 </session>

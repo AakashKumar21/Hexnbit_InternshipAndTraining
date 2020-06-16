@@ -15,23 +15,8 @@ RM := rm -rf
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
-ifneq ($(strip $(CC_DEPS)),)
--include $(CC_DEPS)
-endif
-ifneq ($(strip $(C++_DEPS)),)
--include $(C++_DEPS)
-endif
-ifneq ($(strip $(C_UPPER_DEPS)),)
--include $(C_UPPER_DEPS)
-endif
-ifneq ($(strip $(CXX_DEPS)),)
--include $(CXX_DEPS)
-endif
 ifneq ($(strip $(C_DEPS)),)
 -include $(C_DEPS)
-endif
-ifneq ($(strip $(CPP_DEPS)),)
--include $(CPP_DEPS)
 endif
 endif
 
@@ -56,7 +41,7 @@ all: test_stm32_adc.elf secondary-outputs
 
 # Tool invocations
 test_stm32_adc.elf: $(OBJS) $(USER_OBJS) D:\Projects\stm32cube_workspace\test_stm32_adc\STM32F103C8TX_FLASH.ld
-	arm-none-eabi-g++ -o "test_stm32_adc.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\Projects\stm32cube_workspace\test_stm32_adc\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_stm32_adc.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+	arm-none-eabi-gcc -o "test_stm32_adc.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\Projects\stm32cube_workspace\test_stm32_adc\STM32F103C8TX_FLASH.ld" -Wl,-Map="test_stm32_adc.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
