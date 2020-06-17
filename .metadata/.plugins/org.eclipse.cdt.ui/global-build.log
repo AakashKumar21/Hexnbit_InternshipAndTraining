@@ -1,27 +1,17 @@
-16:24:49 **** Incremental Build of configuration Debug for project assing2_q10_AdcIntTempUsart ****
+13:09:27 **** Incremental Build of configuration Debug for project assing2_q9_bluetooth_uart ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F401xE -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Core/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:113:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
-    sprintf(temp_str, "%.2f\n",temp);
-    ^~~~~~~
-../Core/Src/main.c:113:4: warning: incompatible implicit declaration of built-in function 'sprintf'
-../Core/Src/main.c:113:4: note: include '<stdio.h>' or provide a declaration of 'sprintf'
-../Core/Src/main.c:113:12: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
-    sprintf(temp_str, "%.2f\n",temp);
-            ^~~~~~~~
-../Core/Src/main.c:113:12: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
-arm-none-eabi-gcc -o "assing2_q10_AdcIntTempUsart.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Projects\stm32cube_workspace\assing2_q10_AdcIntTempUsart\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assing2_q10_AdcIntTempUsart.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: assing2_q10_AdcIntTempUsart.elf
+arm-none-eabi-gcc -o "assing2_q9_bluetooth_uart.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Projects\stm32cube_workspace\assing2_q9_bluetooth_uart\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assing2_q9_bluetooth_uart.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: assing2_q9_bluetooth_uart.elf
  
-arm-none-eabi-objdump -h -S  assing2_q10_AdcIntTempUsart.elf  > "assing2_q10_AdcIntTempUsart.list"
-arm-none-eabi-objcopy  -O binary  assing2_q10_AdcIntTempUsart.elf  "assing2_q10_AdcIntTempUsart.bin"
-arm-none-eabi-size   assing2_q10_AdcIntTempUsart.elf 
+arm-none-eabi-objdump -h -S  assing2_q9_bluetooth_uart.elf  > "assing2_q9_bluetooth_uart.list"
+arm-none-eabi-objcopy  -O binary  assing2_q9_bluetooth_uart.elf  "assing2_q9_bluetooth_uart.bin"
+arm-none-eabi-size   assing2_q9_bluetooth_uart.elf 
    text	   data	    bss	    dec	    hex	filename
-  24604	    484	   1836	  26924	   692c	assing2_q10_AdcIntTempUsart.elf
+   8460	     20	   1700	  10180	   27c4	assing2_q9_bluetooth_uart.elf
 Finished building: default.size.stdout
  
-Finished building: assing2_q10_AdcIntTempUsart.bin
+Finished building: assing2_q9_bluetooth_uart.bin
+Finished building: assing2_q9_bluetooth_uart.list
  
-Finished building: assing2_q10_AdcIntTempUsart.list
  
