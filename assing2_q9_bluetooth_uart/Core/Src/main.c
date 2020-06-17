@@ -68,7 +68,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 	else if(cmd == 'B')
 		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
 	else
-		 HAL_UART_Transmit(&huart2, message, sizeof(message),100);
+		 HAL_UART_Transmit(&huart1, message, sizeof(message),100);
 }
 
 /* USER CODE END 0 */
