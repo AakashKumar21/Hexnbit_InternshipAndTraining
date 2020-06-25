@@ -1,0 +1,27 @@
+#include <pcf8574.h>
+
+I2C_HandleTypeDef *pcf8574_hi2c = NULL;
+
+void HAL_PCF8574_Init(I2C_HandleTypeDef * hi2c, uint8_t address)
+{
+	pcf8574_hi2c = hi2c;
+	pcf8574_address = address;
+}
+
+void HAL_PCF8574_WritePin(uint8_t GPIO_Pin, GPIO_PinState PinState)
+{
+	static uint8_t pin_states = 0;
+	if(PinState){
+		pin_states |= GPIO_Pin;
+	}
+	else pin_states &= (UINT8_MAX & ~GPIO_Pin);
+	HAL_StatusTypeDef status = HAL_I2C_Master_Transmit(pcf8574_hi2c, pcf8574_address, &pin_states, 1, 10);
+	if(!HAL_StatusTypeDef)
+	{
+		for(int i=0; i < status; i++)
+		{
+			HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
+			HAL_Delay(200);
+		}
+	}
+}

@@ -1,0 +1,8 @@
+#if defined (STM32F401xE)
+#include <stm32f4xx_hal.h>
+#elif defined (STM32F103xB)
+#include <stm32f1xx_hal.h>
+#else
+#error "Error"
+#endif
+

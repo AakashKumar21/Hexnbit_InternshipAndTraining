@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 9 resources" deleteContents="false" description="Delete 9 resources" element1="/as1_blink" element2="/assing2_q10_AdcIntTempUsart" element3="/assing2_q9_bluetooth_uart" element4="/assingment_1_q9" element5="/stm32_pcf8574" element6="/test_arm_stm32" element7="/test_arm_stm32_2" element8="/test_arm_stm32_2_test_arm_stm32_2" element9="/test_stm32_3" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="9" stamp="1592583187306"/>
+</session>

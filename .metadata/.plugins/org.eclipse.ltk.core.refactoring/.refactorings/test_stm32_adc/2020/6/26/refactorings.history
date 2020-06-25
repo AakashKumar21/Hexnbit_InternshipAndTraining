@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;test_stm32_adc/Core/Inc/eeprom_24C02&apos; to &apos;eeprom_24C02.h&apos;" description="Rename resource &apos;eeprom_24C02&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Inc/eeprom_24C02" name="eeprom_24C02.h" stamp="1592990286764" updateReferences="true"/>
+</session>

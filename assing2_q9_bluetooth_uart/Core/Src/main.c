@@ -64,9 +64,9 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
 	static uint8_t message[] = "Invalid Char";
 	if(cmd == 'A')
-		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
+		HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
 	else if(cmd == 'B')
-		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 	else
 		 HAL_UART_Transmit(&huart1, message, sizeof(message),100);
 }

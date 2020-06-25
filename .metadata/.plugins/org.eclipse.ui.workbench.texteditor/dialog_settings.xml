@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="temp_ascii"/>
+		<item key="selection" value=""/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="RTC"/>
+			<item value="rtc"/>
+			<item value="HAL_TIM_PeriodElapsedCallback"/>
+			<item value="pulse"/>
+			<item value="Instance"/>
+			<item value="i2c"/>
+			<item value="uart"/>
+			<item value="huart1"/>
+			<item value="HAL_StatusTypeDef`"/>
+			<item value="huart"/>
+			<item value="pcf8574_hi2c"/>
+			<item value="assert"/>
+			<item value="HA"/>
 			<item value="temp_ascii"/>
 			<item value="modf"/>
-			<item value="init"/>
-			<item value="DIGIT"/>
-			<item value="HAL_DELAY"/>
-			<item value="DELAY"/>
-			<item value="EXT_LED"/>
-			<item value="`"/>
-			<item value="main"/>
-			<item value="InitStruct.HSIState = RCC_HSI_ON"/>
-			<item value="PERIPH_BASE"/>
-			<item value="APB2PERIPH_BASE"/>
-			<item value="GPIOA_BASE"/>
-			<item value="GPIO_TypeDef"/>
-			<item value="GPIOA"/>
 		</list>
 		<list key="replacehistory">
 		</list>

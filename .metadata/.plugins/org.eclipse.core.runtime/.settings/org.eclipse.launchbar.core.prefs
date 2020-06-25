@@ -1,8 +1,10 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:test_stm32_adc.elf,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test_stm32_adc Debug
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:test_stm32_adc.elf,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:stm32_pcf8574 Release,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:stm32_pcf8574,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test_stm32_adc Debug
 eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:stm32_pcf8574\ Release/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:stm32_pcf8574/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test_arm_stm32_2/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test_arm_stm32_2/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test_stm32_adc\ Debug/activeLaunchMode=run

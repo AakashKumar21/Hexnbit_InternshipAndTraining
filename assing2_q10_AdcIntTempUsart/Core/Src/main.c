@@ -108,11 +108,6 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  HAL_ADC_Start_DMA(&hadc1, &adc_val, 1);
-	  temp = ((adc_val * 3.3/4096) - 0.76)/0.0025 + 25;
-	  sprintf(temp_str, "%.2f\n",temp);
-	  HAL_UART_Transmit(&huart2, temp_str , sizeof(temp_str), 100);
-	  HAL_Delay(1000);
 
     /* USER CODE BEGIN 3 */
   }

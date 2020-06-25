@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;stm32_pcf8574/stm32_pcf8574 (1).launch&apos;" deleteContents="false" description="Delete resource &apos;stm32_pcf8574/stm32_pcf8574 (1).launch&apos;" element1="/stm32_pcf8574/stm32_pcf8574 (1).launch" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1592747944488"/>&#x0A;<refactoring comment="Delete resource &apos;assing2_q10_AdcIntTempUsart&apos;" deleteContents="false" description="Delete resource &apos;assing2_q10_AdcIntTempUsart&apos;" element1="/assing2_q10_AdcIntTempUsart" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1592991010935"/>
+</session>

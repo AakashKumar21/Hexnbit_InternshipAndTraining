@@ -1,36 +1,10 @@
-16:07:12 **** Incremental Build of configuration Debug for project test_stm32_adc ****
+15:00:19 **** Incremental Build of configuration Debug for project test_stm32_adc ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:117:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
-    sprintf(temp_str, "%.2f\n",temp);
-    ^~~~~~~
-../Core/Src/main.c:117:4: warning: incompatible implicit declaration of built-in function 'sprintf'
-../Core/Src/main.c:117:4: note: include '<stdio.h>' or provide a declaration of 'sprintf'
-../Core/Src/main.c:118:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
-    HAL_UART_Transmit(&huart1, temp_str , sizeof(temp_str), 100);
-                               ^~~~~~~~
-In file included from ../Core/Inc/stm32f1xx_hal_conf.h:337:0,
-                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:30,
-                 from ../Core/Inc/main.h:31,
-                 from ../Core/Src/main.c:22:
-../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:700:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
- HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
-                   ^~~~~~~~~~~~~~~~~
-arm-none-eabi-gcc -o "test_stm32_adc.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Projects\stm32cube_workspace\test_stm32_adc\STM32F103C8TX_FLASH.ld" -Wl,-Map="test_stm32_adc.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: test_stm32_adc.elf
- 
-arm-none-eabi-objdump -h -S  test_stm32_adc.elf  > "test_stm32_adc.list"
-arm-none-eabi-objcopy  -O binary  test_stm32_adc.elf  "test_stm32_adc.bin"
 arm-none-eabi-size   test_stm32_adc.elf 
    text	   data	    bss	    dec	    hex	filename
-  22960	    484	   1780	  25224	   6288	test_stm32_adc.elf
+  20020	    484	   1852	  22356	   5754	test_stm32_adc.elf
 Finished building: default.size.stdout
  
-Finished building: test_stm32_adc.bin
- 
-Finished building: test_stm32_adc.list
- 
 
-16:07:15 Build Finished. 0 errors, 3 warnings. (took 3s.513ms)
+15:00:21 Build Finished. 0 errors, 0 warnings. (took 1s.661ms)
 

@@ -1,0 +1,10 @@
+19:30:06 **** Incremental Build of configuration Release for project stm32_pcf8574 ****
+make -j8 all 
+arm-none-eabi-size   stm32_pcf8574.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6328	     20	   1780	   8128	   1fc0	stm32_pcf8574.elf
+Finished building: default.size.stdout
+ 
+
+19:30:08 Build Finished. 0 errors, 0 warnings. (took 1s.887ms)
+

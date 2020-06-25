@@ -1,0 +1,20 @@
+19:39:21 **** Incremental Build of configuration Debug for project assing3_inputCapture ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F401xE -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Core/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "assing3_inputCapture.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Projects\stm32cube_workspace\assing3_inputCapture\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assing3_inputCapture.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: assing3_inputCapture.elf
+ 
+arm-none-eabi-objdump -h -S  assing3_inputCapture.elf  > "assing3_inputCapture.list"
+arm-none-eabi-objcopy  -O binary  assing3_inputCapture.elf  "assing3_inputCapture.bin"
+arm-none-eabi-size   assing3_inputCapture.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10176	     20	   1700	  11896	   2e78	assing3_inputCapture.elf
+Finished building: default.size.stdout
+ 
+Finished building: assing3_inputCapture.bin
+Finished building: assing3_inputCapture.list
+ 
+ 
+
+19:39:30 Build Finished. 0 errors, 0 warnings. (took 9s.179ms)
+

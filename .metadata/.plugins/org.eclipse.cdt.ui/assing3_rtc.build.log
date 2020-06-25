@@ -1,0 +1,10 @@
+19:53:04 **** Incremental Build of configuration Debug for project assing3_rtc ****
+make -j8 all 
+arm-none-eabi-size   assing3_rtc.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10724	     20	   1668	  12412	   307c	assing3_rtc.elf
+Finished building: default.size.stdout
+ 
+
+19:53:06 Build Finished. 0 errors, 0 warnings. (took 1s.512ms)
+

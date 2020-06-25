@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;stm32_pcf8574/Drivers/pcf8574_Driver/pcf8574&apos; to &apos;pcf8574.h&apos;" description="Rename resource &apos;pcf8574&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Drivers/pcf8574_Driver/pcf8574" name="pcf8574.h" stamp="1592578902662" updateReferences="true"/>
+</session>

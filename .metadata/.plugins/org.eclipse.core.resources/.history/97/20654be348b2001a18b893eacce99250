@@ -1,0 +1,8 @@
+#include <pcf8574.h>
+#include <stm32f1xx_hal_gpio.h>
+#include <stm32f1xx_hal_i2c.h>
+
+void HAL_PCF8574_WritePin(uint8_t GPIO_Pin, GPIO_PinState PinState);
+{
+	HAL
+}
